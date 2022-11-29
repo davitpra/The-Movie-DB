@@ -61,8 +61,8 @@ async function getTrendingMoviesPreview() {
     console.log(movies)
   
     createMovies(movies, trendingMoviesPreviewList);
-  }
-  
+}
+
   async function getCategegoriesPreview() {
     const { data } = await api('genre/movie/list');
     const categories = data.genres;
